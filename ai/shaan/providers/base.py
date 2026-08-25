@@ -2,13 +2,13 @@ from abc import ABC, abstractmethod
 
 
 class LLMProvider(ABC):
-    """Common interface for all LLM providers used by SHAAN."""
+    """
+    Common interface for all LLM providers used by SHAAN.
+    """
 
     @abstractmethod
-    def chat(
-        self,
-        system_context: str,
-        user_message: str,
-    ) -> str:
-        """Generate a response using the configured LLM."""
+    def generate(self, prompt: str) -> str:
+        """
+        Generate a response from a complete prompt.
+        """
         raise NotImplementedError

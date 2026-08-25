@@ -10,7 +10,7 @@ class GeminiProvider(LLMProvider):
     Thin provider wrapper around Google's Gemini API.
 
     SHAAN business logic, campus retrieval, RAG, authorization,
-    and grounding should remain outside this provider.
+    grounding, and prompt construction remain outside this provider.
     """
 
     DEFAULT_MODEL = "gemini-2.5-flash"
@@ -43,39 +43,13 @@ class GeminiProvider(LLMProvider):
 
         self.client = genai.Client(api_key=self.api_key)
 
-    def chat(
-        self,
-        system_context: str,
-        user_message: str,
-    ) -> str:
+    def generate(self, prompt: str) -> str:
         """
         Generate a response using Gemini.
 
-        Campus-specific information must come from application
-        context rather than being invented by the model.
+        The prompt is constructed by SHAAN's PromptBuilder.
+        This provider only handles communication with Gemini.
         """
-
-        prompt = f"""
-You are SHAAN, the AI intelligence layer of CampusVerse,
-an intelligent ecosystem for college.
-
-Rules:
-- Use only the application context for campus-specific facts.
-- Never invent campus dates, rooms, policies, schedules,
-  attendance values, notices, assignments, examinations,
-  events, or placement information.
-- If required campus information is unavailable, clearly
-  say that the information is unavailable.
-- Be helpful, professional, friendly, concise, and easy
-  to understand.
-- Do not claim to be Gemini or Google AI.
-
-Application context:
-{system_context}
-
-User question:
-{user_message}
-"""
 
         response = self.client.models.generate_content(
             model=self.model,
