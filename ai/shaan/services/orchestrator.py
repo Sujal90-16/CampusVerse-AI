@@ -1,61 +1,12 @@
-from dataclasses import dataclass, field
 from typing import Any
 
+from ..models import AIRequest, AIResponse, UserContext
 from ..prompts.builder import PromptBuilder
 from ..providers.base import LLMProvider
+from ..providers.exceptions import LLMProviderError
 from .context import CampusContext
 from .grounding import GroundingService
 from .intent import Intent, detect_intent
-
-
-@dataclass(slots=True)
-class UserContext:
-    """
-    Information about the current CampusVerse user.
-
-    This context can later be populated from the CampusVerse
-    backend authentication/database layer.
-    """
-
-    user_id: str | None = None
-    role: str | None = None
-    department: str | None = None
-    semester: str | None = None
-
-    # Additional information that may be useful to SHAAN.
-    extra: dict[str, Any] = field(default_factory=dict)
-
-
-@dataclass(slots=True)
-class AIRequest:
-    """
-    Standard request object passed into SHAAN.
-    """
-
-    message: str
-
-    # User context is optional because some campus questions
-    # do not require authentication.
-    user: UserContext = field(default_factory=UserContext)
-
-
-@dataclass(slots=True)
-class AIResponse:
-    """
-    Standard response returned by SHAAN.
-    """
-
-    answer: str
-
-    # Intent detected by the SHAAN routing layer.
-    intent: Intent
-
-    # Sources used to construct the answer.
-    sources: list[dict[str, Any]] = field(default_factory=list)
-
-    # Optional metadata useful for debugging, analytics,
-    # evaluation, and future observability.
-    metadata: dict[str, Any] = field(default_factory=dict)
 
 
 class SHAANOrchestrator:
@@ -164,7 +115,24 @@ class SHAANOrchestrator:
         )
 
         # Step 4: Ask the injected LLM provider for an answer.
-        answer = self.provider.generate(prompt)
+        try:
+            answer = self.provider.generate(prompt)
+
+        except LLMProviderError:
+            # Never expose internal provider errors to the user.
+            # Detailed errors should be handled by future logging
+            # and observability infrastructure.
+            return self.create_response(
+                answer=(
+                    "I'm unable to generate a response right now. "
+                    "Please try again later."
+                ),
+                intent=intent,
+                metadata={
+                    "provider": self.provider.__class__.__name__,
+                    "status": "provider_error",
+                },
+            )
 
         # Step 5: Return a normalized SHAAN response.
         return self.create_response(
@@ -172,5 +140,6 @@ class SHAANOrchestrator:
             intent=intent,
             metadata={
                 "provider": self.provider.__class__.__name__,
+                "status": "success",
             },
         )

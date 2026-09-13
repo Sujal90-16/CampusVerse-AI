@@ -3,6 +3,7 @@ import os
 from google import genai
 
 from .base import LLMProvider
+from .exceptions import LLMProviderError
 
 
 class GeminiProvider(LLMProvider):
@@ -30,9 +31,9 @@ class GeminiProvider(LLMProvider):
         self.api_key = api_key or os.getenv("GEMINI_API_KEY")
 
         if not self.api_key:
-            raise RuntimeError(
-                "GEMINI_API_KEY is not configured. "
-                "Set it in the environment before using GeminiProvider."
+            raise LLMProviderError(
+                "GEMINI_API_KEY is not configured.",
+                provider="gemini",
             )
 
         self.model = (
@@ -41,21 +42,45 @@ class GeminiProvider(LLMProvider):
             or self.DEFAULT_MODEL
         )
 
-        self.client = genai.Client(api_key=self.api_key)
+        try:
+            self.client = genai.Client(api_key=self.api_key)
+        except Exception as exc:
+            raise LLMProviderError(
+                "Failed to initialize the Gemini client.",
+                provider="gemini",
+            ) from exc
 
     def generate(self, prompt: str) -> str:
         """
         Generate a response using Gemini.
 
-        The prompt is constructed by SHAAN's PromptBuilder.
-        This provider only handles communication with Gemini.
+        Provider-specific errors are converted into
+        LLMProviderError before leaving this layer.
         """
 
-        response = self.client.models.generate_content(
-            model=self.model,
-            contents=prompt,
-        )
+        if not prompt.strip():
+            raise LLMProviderError(
+                "Cannot generate a response from an empty prompt.",
+                provider="gemini",
+            )
 
-        return response.text or (
-            "I could not generate a response right now."
-        )
+        try:
+            response = self.client.models.generate_content(
+                model=self.model,
+                contents=prompt,
+            )
+        except Exception as exc:
+            raise LLMProviderError(
+                "Gemini failed to generate a response.",
+                provider="gemini",
+            ) from exc
+
+        answer = response.text
+
+        if not answer or not answer.strip():
+            raise LLMProviderError(
+                "Gemini returned an empty response.",
+                provider="gemini",
+            )
+
+        return answer.strip()
