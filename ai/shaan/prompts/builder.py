@@ -4,8 +4,8 @@ Prompt construction utilities for SHAAN.
 
 from typing import Any
 
+from ..models import AIRequest
 from ..services.grounding import GroundingContext
-from ..services.orchestrator import AIRequest
 from .system import SHAAN_SYSTEM_PROMPT
 
 

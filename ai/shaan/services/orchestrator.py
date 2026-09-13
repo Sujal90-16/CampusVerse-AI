@@ -1,7 +1,11 @@
 from dataclasses import dataclass, field
 from typing import Any
 
-from .intent import Intent
+from ..prompts.builder import PromptBuilder
+from ..providers.base import LLMProvider
+from .context import CampusContext
+from .grounding import GroundingService
+from .intent import Intent, detect_intent
 
 
 @dataclass(slots=True)
@@ -47,7 +51,6 @@ class AIResponse:
     intent: Intent
 
     # Sources used to construct the answer.
-    # These may come from RAG, campus APIs, database queries, etc.
     sources: list[dict[str, Any]] = field(default_factory=list)
 
     # Optional metadata useful for debugging, analytics,
@@ -59,29 +62,46 @@ class SHAANOrchestrator:
     """
     Central orchestration layer for SHAAN.
 
-    The orchestrator will eventually coordinate:
+    The orchestrator coordinates the major SHAAN components:
 
         User Request
              ↓
         Intent Detection
              ↓
-        Context Building
-             ↓
-        Campus Data / RAG
-             ↓
-        LLM Provider
+        Campus Context
              ↓
         Grounding
              ↓
+        Prompt Builder
+             ↓
+        LLM Provider
+             ↓
         AIResponse
 
-    The first version intentionally keeps the implementation
-    lightweight. Individual services will be connected in
-    subsequent development milestones.
+    The orchestrator does not depend on a specific LLM provider.
+    Any implementation of LLMProvider can be injected.
     """
 
-    def __init__(self) -> None:
+    def __init__(
+        self,
+        provider: LLMProvider,
+        *,
+        prompt_builder: PromptBuilder | None = None,
+        grounding_service: GroundingService | None = None,
+    ) -> None:
+        """
+        Initialize the SHAAN orchestration layer.
+
+        The LLM provider is injected so SHAAN remains independent
+        from Gemini, OpenAI, local models, or any other provider.
+        """
+
         self.name = "SHAAN"
+        self.provider = provider
+        self.prompt_builder = prompt_builder or PromptBuilder()
+        self.grounding_service = (
+            grounding_service or GroundingService()
+        )
 
     def create_request(
         self,
@@ -113,4 +133,44 @@ class SHAANOrchestrator:
             intent=intent,
             sources=sources or [],
             metadata=metadata or {},
+        )
+
+    def process(
+        self,
+        request: AIRequest,
+        campus_context: CampusContext | None = None,
+    ) -> AIResponse:
+        """
+        Process a complete SHAAN request.
+
+        This method coordinates intent detection, grounding,
+        prompt construction, and LLM generation.
+        """
+
+        # Step 1: Detect the user's intent.
+        intent = detect_intent(request.message)
+
+        # Step 2: Convert trusted campus context into a
+        # grounding context for the LLM.
+        grounding = self.grounding_service.build(
+            campus_context
+        )
+
+        # Step 3: Build the complete provider-independent prompt.
+        prompt = self.prompt_builder.build(
+            request=request,
+            grounding=grounding,
+            intent=intent.value,
+        )
+
+        # Step 4: Ask the injected LLM provider for an answer.
+        answer = self.provider.generate(prompt)
+
+        # Step 5: Return a normalized SHAAN response.
+        return self.create_response(
+            answer=answer,
+            intent=intent,
+            metadata={
+                "provider": self.provider.__class__.__name__,
+            },
         )
