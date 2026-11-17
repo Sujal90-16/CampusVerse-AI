@@ -31,3 +31,8 @@ build/
 
 # Logs
 *.log
+# Local generated files
+backend/app/ml/intent_model.joblib
+*.backup-*
+*.db
+*.sqlite

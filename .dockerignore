@@ -1,0 +1,8 @@
+.git
+**/node_modules
+**/.venv
+**/__pycache__
+**/*.pyc
+backend/.env
+backend/campusverse.db
+frontend/dist

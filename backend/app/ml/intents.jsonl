@@ -1,0 +1,231 @@
+{"text": "What classes do I have today", "intent": "timetable"}
+{"text": "Meri aaj ki timetable batao", "intent": "timetable"}
+{"text": "When is my next lecture", "intent": "timetable"}
+{"text": "Show my attendance percentage", "intent": "attendance"}
+{"text": "Meri attendance kitni hai", "intent": "attendance"}
+{"text": "Attendance shortage details", "intent": "attendance"}
+{"text": "When is my next exam", "intent": "exam"}
+{"text": "Mera next exam kab hai", "intent": "exam"}
+{"text": "Show examination datesheet", "intent": "exam"}
+{"text": "What assignments are due", "intent": "assignment"}
+{"text": "Assignment submission deadline", "intent": "assignment"}
+{"text": "Upcoming campus events", "intent": "event"}
+{"text": "College mein events kaunse hain", "intent": "event"}
+{"text": "Sports event schedule", "intent": "event"}
+{"text": "Show latest college notices", "intent": "notice"}
+{"text": "Any new announcement", "intent": "notice"}
+{"text": "How do I prepare for placements", "intent": "placement"}
+{"text": "Companies visiting campus", "intent": "placement"}
+{"text": "Which student clubs are available", "intent": "club"}
+{"text": "How can I join the sports club", "intent": "club"}
+{"text": "Tell me the attendance policy", "intent": "policy"}
+{"text": "College rules and regulations", "intent": "policy"}
+{"text": "Where is the library", "intent": "facilities"}
+{"text": "Campus wifi and lab information", "intent": "facilities"}
+{"text": "Hello SHAAN", "intent": "general"}
+{"text": "Can you help me", "intent": "general"}
+{"text": "Tell me about CampusVerse", "intent": "general"}
+{"text": "attendance report kaise dekhu", "intent": "attendance"}
+{"text": "how many classes have I attended", "intent": "attendance"}
+{"text": "attendance record dikhao", "intent": "attendance"}
+{"text": "DBMS attendance batao", "intent": "attendance"}
+{"text": "meri hazri kitni hai", "intent": "attendance"}
+{"text": "what is my attendance status", "intent": "attendance"}
+{"text": "check attendance for my course", "intent": "attendance"}
+{"text": "attendance shortage hai kya", "intent": "attendance"}
+{"text": "aaj meri classes kya hain", "intent": "timetable"}
+{"text": "show my weekly timetable", "intent": "timetable"}
+{"text": "kal ka schedule batao", "intent": "timetable"}
+{"text": "class ka time kya hai", "intent": "timetable"}
+{"text": "which room is my next class in", "intent": "timetable"}
+{"text": "my lecture schedule please", "intent": "timetable"}
+{"text": "timetable for semester seven", "intent": "timetable"}
+{"text": "aaj ka time table dikhao", "intent": "timetable"}
+{"text": "next class kab hai", "intent": "timetable"}
+{"text": "upcoming exam schedule dikhao", "intent": "exam"}
+{"text": "exam date batao", "intent": "exam"}
+{"text": "when is the next internal assessment", "intent": "exam"}
+{"text": "exam timetable please", "intent": "exam"}
+{"text": "kal exam hai kya", "intent": "exam"}
+{"text": "show my upcoming examinations", "intent": "exam"}
+{"text": "where is my exam scheduled", "intent": "exam"}
+{"text": "semester exam kab honge", "intent": "exam"}
+{"text": "next test date", "intent": "exam"}
+{"text": "pending assignments dikhao", "intent": "assignment"}
+{"text": "assignment submission kab hai", "intent": "assignment"}
+{"text": "what is due this week", "intent": "assignment"}
+{"text": "how do I submit my assignment", "intent": "assignment"}
+{"text": "assignment ki last date kya hai", "intent": "assignment"}
+{"text": "show my coursework", "intent": "assignment"}
+{"text": "upcoming assignment deadline", "intent": "assignment"}
+{"text": "list my assignments", "intent": "assignment"}
+{"text": "assignment status batao", "intent": "assignment"}
+{"text": "what homework do I have", "intent": "assignment"}
+{"text": "college ke upcoming events kya hain", "intent": "event"}
+{"text": "sports event kab hai", "intent": "event"}
+{"text": "what is happening on campus", "intent": "event"}
+{"text": "show college fest details", "intent": "event"}
+{"text": "any events this month", "intent": "event"}
+{"text": "campus activities batao", "intent": "event"}
+{"text": "when is the football tournament", "intent": "event"}
+{"text": "events calendar dikhao", "intent": "event"}
+{"text": "what events are listed", "intent": "event"}
+{"text": "college mein kya event hai", "intent": "event"}
+{"text": "latest college notice dikhao", "intent": "notice"}
+{"text": "any new announcements", "intent": "notice"}
+{"text": "noticeboard update please", "intent": "notice"}
+{"text": "college ki latest news kya hai", "intent": "notice"}
+{"text": "show official campus notices", "intent": "notice"}
+{"text": "library notice kya hai", "intent": "notice"}
+{"text": "placement notice dikhao", "intent": "notice"}
+{"text": "what announcements were published", "intent": "notice"}
+{"text": "notice board check karo", "intent": "notice"}
+{"text": "recent notices", "intent": "notice"}
+{"text": "placement ki preparation kaise karu", "intent": "placement"}
+{"text": "resume improve kaise karun", "intent": "placement"}
+{"text": "interview preparation tips", "intent": "placement"}
+{"text": "campus placement eligibility", "intent": "placement"}
+{"text": "how do I prepare for coding rounds", "intent": "placement"}
+{"text": "placement cell information", "intent": "placement"}
+{"text": "what skills should I learn for placements", "intent": "placement"}
+{"text": "mock interview tips", "intent": "placement"}
+{"text": "placement drive updates", "intent": "placement"}
+{"text": "help me prepare for placements", "intent": "placement"}
+{"text": "library kahan hai", "intent": "facilities"}
+{"text": "campus facilities batao", "intent": "facilities"}
+{"text": "where can I find the library", "intent": "facilities"}
+{"text": "sports ground location", "intent": "facilities"}
+{"text": "college office kahan hai", "intent": "facilities"}
+{"text": "student support facilities", "intent": "facilities"}
+{"text": "where is the seminar hall", "intent": "facilities"}
+{"text": "campus map help", "intent": "facilities"}
+{"text": "what facilities are available", "intent": "facilities"}
+{"text": "library timing kya hai", "intent": "facilities"}
+{"text": "attendance policy kya hai", "intent": "policy"}
+{"text": "college rules batao", "intent": "policy"}
+{"text": "where can I find academic regulations", "intent": "policy"}
+{"text": "leave policy kya hai", "intent": "policy"}
+{"text": "official academic policy", "intent": "policy"}
+{"text": "exam guidelines kahan milengi", "intent": "policy"}
+{"text": "what is the official policy", "intent": "policy"}
+{"text": "student handbook details", "intent": "policy"}
+{"text": "college ke attendance rules", "intent": "policy"}
+{"text": "academic regulation document", "intent": "policy"}
+{"text": "hi campusverse", "intent": "general"}
+{"text": "help me with college", "intent": "general"}
+{"text": "namaste", "intent": "general"}
+{"text": "what can you do", "intent": "general"}
+{"text": "hey there", "intent": "general"}
+{"text": "good morning shaan", "intent": "general"}
+{"text": "I have a campus question", "intent": "general"}
+{"text": "who are you", "intent": "general"}
+{"text": "attendance by subject", "intent": "attendance"}
+{"text": "how many lectures were missed", "intent": "attendance"}
+{"text": "mera attendance status check karo", "intent": "attendance"}
+{"text": "attendance kitni percent honi chahiye", "intent": "attendance"}
+{"text": "attendance dashboard kholo", "intent": "attendance"}
+{"text": "show present absent count", "intent": "attendance"}
+{"text": "attendance ka record chahiye", "intent": "attendance"}
+{"text": "attendance in cloud computing", "intent": "attendance"}
+{"text": "classes attended percentage", "intent": "attendance"}
+{"text": "meri classes ki attendance bata do", "intent": "attendance"}
+{"text": "schedule my classes", "intent": "timetable"}
+{"text": "what time is my first class", "intent": "timetable"}
+{"text": "lecture kab start hoga", "intent": "timetable"}
+{"text": "classroom number kya hai", "intent": "timetable"}
+{"text": "show classes for monday", "intent": "timetable"}
+{"text": "show classes for tuesday", "intent": "timetable"}
+{"text": "my college time table", "intent": "timetable"}
+{"text": "class timings for CSE semester 7", "intent": "timetable"}
+{"text": "which classes are scheduled this week", "intent": "timetable"}
+{"text": "aaj ka lecture schedule", "intent": "timetable"}
+{"text": "dates of upcoming tests", "intent": "exam"}
+{"text": "exam schedule for this semester", "intent": "exam"}
+{"text": "internal exam timetable", "intent": "exam"}
+{"text": "examination venue details", "intent": "exam"}
+{"text": "when are the semester assessments", "intent": "exam"}
+{"text": "exam list for CSE", "intent": "exam"}
+{"text": "my exam calendar", "intent": "exam"}
+{"text": "test kab hai", "intent": "exam"}
+{"text": "show exam room and date", "intent": "exam"}
+{"text": "assessment schedule please", "intent": "exam"}
+{"text": "show assignment deadlines", "intent": "assignment"}
+{"text": "what work should I submit", "intent": "assignment"}
+{"text": "coursework due dates", "intent": "assignment"}
+{"text": "assignment list for my semester", "intent": "assignment"}
+{"text": "I need to turn in my homework", "intent": "assignment"}
+{"text": "assignment due date check", "intent": "assignment"}
+{"text": "what assignments are pending", "intent": "assignment"}
+{"text": "submit coursework instructions", "intent": "assignment"}
+{"text": "homework deadlines please", "intent": "assignment"}
+{"text": "my assignment calendar", "intent": "assignment"}
+{"text": "campus calendar", "intent": "event"}
+{"text": "list upcoming college activities", "intent": "event"}
+{"text": "is there a sports tournament", "intent": "event"}
+{"text": "cultural events at college", "intent": "event"}
+{"text": "event dates and venues", "intent": "event"}
+{"text": "college activity schedule", "intent": "event"}
+{"text": "what is happening next week on campus", "intent": "event"}
+{"text": "upcoming student events", "intent": "event"}
+{"text": "tell me about campus programmes", "intent": "event"}
+{"text": "college events list please", "intent": "event"}
+{"text": "show notice updates", "intent": "notice"}
+{"text": "new campus circulars", "intent": "notice"}
+{"text": "any placement circular today", "intent": "notice"}
+{"text": "recent college announcements", "intent": "notice"}
+{"text": "where are campus notices", "intent": "notice"}
+{"text": "official circular list", "intent": "notice"}
+{"text": "latest student notification", "intent": "notice"}
+{"text": "new notice kya aaya", "intent": "notice"}
+{"text": "campus announcements board", "intent": "notice"}
+{"text": "show notices from administration", "intent": "notice"}
+{"text": "help with resume for campus drives", "intent": "placement"}
+{"text": "how to prepare for technical interview", "intent": "placement"}
+{"text": "placement roadmap for CSE student", "intent": "placement"}
+{"text": "what should my portfolio contain", "intent": "placement"}
+{"text": "coding interview study plan", "intent": "placement"}
+{"text": "how to improve LinkedIn for jobs", "intent": "placement"}
+{"text": "placement drive checklist", "intent": "placement"}
+{"text": "what projects help in placements", "intent": "placement"}
+{"text": "aptitude round preparation", "intent": "placement"}
+{"text": "how to prepare for HR round", "intent": "placement"}
+{"text": "where is the computer lab", "intent": "facilities"}
+{"text": "find student activity centre", "intent": "facilities"}
+{"text": "campus library location please", "intent": "facilities"}
+{"text": "how to find campus office", "intent": "facilities"}
+{"text": "sports facilities on campus", "intent": "facilities"}
+{"text": "is there a student help desk", "intent": "facilities"}
+{"text": "where is the main sports ground", "intent": "facilities"}
+{"text": "campus lab information", "intent": "facilities"}
+{"text": "library location on campus", "intent": "facilities"}
+{"text": "find the seminar room", "intent": "facilities"}
+{"text": "what are college attendance rules", "intent": "policy"}
+{"text": "show student academic handbook", "intent": "policy"}
+{"text": "official exam rules", "intent": "policy"}
+{"text": "college policy document please", "intent": "policy"}
+{"text": "rules for internal assessment", "intent": "policy"}
+{"text": "academic regulation link", "intent": "policy"}
+{"text": "where can I read official policies", "intent": "policy"}
+{"text": "student conduct regulations", "intent": "policy"}
+{"text": "attendance minimum rule", "intent": "policy"}
+{"text": "institution academic policy details", "intent": "policy"}
+{"text": "hello there assistant", "intent": "general"}
+{"text": "hey I need campus help", "intent": "general"}
+{"text": "introduce yourself SHAAN", "intent": "general"}
+{"text": "good evening", "intent": "general"}
+{"text": "help me navigate campusverse", "intent": "general"}
+{"text": "what features do you have", "intent": "general"}
+{"text": "can you answer campus questions", "intent": "general"}
+{"text": "hi there", "intent": "general"}
+{"text": "start a chat with me", "intent": "general"}
+{"text": "what is SHAAN AI", "intent": "general"}
+{"text": "which clubs can I join", "intent": "club"}
+{"text": "student society list", "intent": "club"}
+{"text": "sports club registration", "intent": "club"}
+{"text": "how to join a campus community", "intent": "club"}
+{"text": "college club events", "intent": "club"}
+{"text": "tell me about student clubs", "intent": "club"}
+{"text": "join Kridansh Sports Club", "intent": "club"}
+{"text": "club membership details", "intent": "club"}
+{"text": "campus communities available", "intent": "club"}
+{"text": "how do I participate in clubs", "intent": "club"}
