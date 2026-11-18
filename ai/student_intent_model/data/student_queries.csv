@@ -1,0 +1,193 @@
+text,label
+Where is the college library?,general
+Is there a class on Saturday?,timetable
+How many classes can I miss?,attendance
+Are there any technical competitions?,events
+Can I volunteer for the college fest? urgently.,events
+How many lectures have I attended?,attendance
+When will practical exams begin?,exams
+Please help me. How many lectures have I attended?,attendance
+When will semester results be declared?,results
+"I want to know, Where do I upload my project? for this semester.",assignments
+Please help me. How many classes can I miss?,attendance
+"Can you tell me, Where can I find the hostel office? for this semester.",general
+When does the college day start?,timetable
+Please help me. Is there a seminar this week? for this semester.,events
+Please help me. Where is the event venue? for this semester.,events
+Where can I see my attendance record?,attendance
+Please help me. Where can I find club activities?,events
+Which lecture is scheduled at 10 AM?,timetable
+I want to apply for revaluation urgently.,results
+When is my next practical class?,timetable
+What is the minimum attendance requirement? please.,attendance
+"Can you tell me, Where can I find the homework? for this semester.",assignments
+How can I pay my semester fees? urgently.,fees
+"I want to know, When will practical exams begin? urgently.",exams
+What topics are included in the assignment?,assignments
+"I want to know, When are my semester exams? urgently.",exams
+Which lecture is scheduled at 10 AM?,timetable
+Please help me. How can I check my result? for this semester.,results
+Where can I download my marksheet?,results
+"I want to know, Show me my payment status",fees
+When is the next cultural program?,events
+How many assignments are pending?,assignments
+Show me my examination marks,results
+"Can you tell me, When is the college fest? for this semester.",events
+Where can I find the weekly schedule?,timetable
+Where can I find the homework?,assignments
+"Can you tell me, Where is the campus canteen? urgently.",general
+How can I check my back paper result?,results
+My attendance is below 75 percent,attendance
+Can I submit my assignment late?,assignments
+Has the date sheet been released?,exams
+"I want to know, Show me my examination marks for this semester.",results
+Please help me. My fee payment failed urgently.,fees
+How can I pay my semester fees?,fees
+How can I contact my faculty advisor?,general
+Can I pay fees online?,fees
+What happens if I fail a subject?,results
+"Can you tell me, What is the last date to pay fees? urgently.",fees
+How do I apply for a re-examination?,exams
+"Can you tell me, Can I submit my assignment late?",assignments
+What is my attendance percentage?,attendance
+What are the college office timings? urgently.,general
+How can I improve my attendance?,attendance
+What is the exam date for mathematics?,exams
+I want to apply for revaluation,results
+How can I join a student club? please.,events
+Where is the campus canteen?,general
+"I want to know, Tell me about the college campus for this semester.",general
+My marks are incorrect,results
+What is my Monday timetable?,timetable
+Is there a late fee fine?,fees
+Is there a class on Saturday? urgently.,timetable
+How can I check my result?,results
+What is the hostel fee? urgently.,fees
+Please help me. Is attendance compulsory for every subject? please.,attendance
+Where can I see my attendance record?,attendance
+Please help me. What are the library opening hours? for this semester.,general
+Has the result been announced?,results
+How can I contact the administration office?,general
+Please help me. What topics are included in the assignment?,assignments
+Where can I download my admit card?,exams
+Where can I download my fee receipt?,fees
+Show today's lecture schedule,timetable
+Tell me the university exam schedule,exams
+What is the last date for submission?,assignments
+How do I calculate my percentage?,results
+"I want to know, Is there a late fee fine?",fees
+My fee payment failed,fees
+"I want to know, Where can I download my fee receipt?",fees
+Can I pay fees online?,fees
+What events are happening on campus?,events
+Where can I find the weekly schedule? for this semester.,timetable
+Is attendance compulsory for every subject?,attendance
+"Can you tell me, How do I calculate my percentage? please.",results
+Please help me. What events are happening on campus? for this semester.,events
+"I want to know, Where is the college library? for this semester.",general
+Please help me. Show me the current assignments urgently.,assignments
+What is the exam reporting time? please.,exams
+"I want to know, How do I register for a college event?",events
+"Can you tell me, Tell me the university exam schedule for this semester.",exams
+When are my semester exams?,exams
+Please help me. When is my next lecture? please.,timetable
+What facilities are available in college?,general
+How do I apply for a fee refund?,fees
+"I want to know, How do I submit my assignment? please.",assignments
+Is there a seminar this week?,events
+What is the minimum attendance requirement?,attendance
+Please help me. What classes do I have tomorrow? urgently.,timetable
+"Can you tell me, Who should I contact for help? please.",general
+What is the last date to pay fees?,fees
+"I want to know, Tell me my lab timings please.",timetable
+How do I get a fee payment confirmation?,fees
+Tell me about the college campus,general
+"I want to know, How do I get my student ID card? please.",general
+How do I register for a college event?,events
+Where is the event venue?,events
+When will semester results be declared? urgently.,results
+When is my assignment deadline?,assignments
+When will internal marks be uploaded?,results
+What is my CGPA?,results
+What are the library opening hours?,general
+Please help me. What is my CGPA? for this semester.,results
+Where do I upload my project?,assignments
+"Can you tell me, Will I be detained due to attendance? please.",attendance
+Please help me. Where can I download my admit card? please.,exams
+"Can you tell me, What is the exam date for mathematics?",exams
+"I want to know, Can I sit in exams with low attendance? please.",attendance
+What is the exam reporting time?,exams
+How can I join a student club?,events
+How do I get a fee payment confirmation? for this semester.,fees
+"I want to know, What is the syllabus for the exam? please.",exams
+Has the class schedule changed?,timetable
+Has the date sheet been released? please.,exams
+"Can you tell me, Are there any technical competitions? please.",events
+"Can you tell me, When is my next practical class? urgently.",timetable
+Show today's lecture schedule for this semester.,timetable
+"Can you tell me, When will internal marks be uploaded? for this semester.",results
+Are exams postponed? for this semester.,exams
+What is the tuition fee for this semester?,fees
+"Can you tell me, When is the next cultural program? urgently.",events
+Where can I find the hostel office?,general
+Show me my class timetable please.,timetable
+Where is the computer science department?,general
+"Can you tell me, How can I check my back paper result? please.",results
+Show me the examination timetable,exams
+Has the assignment been uploaded?,assignments
+When is the college fest?,events
+How can I improve my attendance? urgently.,attendance
+"I want to know, When is my assignment deadline? urgently.",assignments
+Are exams postponed?,exams
+"Can you tell me, Show me the examination timetable urgently.",exams
+Will I be detained due to attendance?,attendance
+How much college fee is pending?,fees
+Please help me. When does the college day start? please.,timetable
+"I want to know, Has the result been announced?",results
+"Can you tell me, What is the tuition fee for this semester? for this semester.",fees
+"I want to know, My attendance is below 75 percent please.",attendance
+How many assignments are pending? for this semester.,assignments
+What is the syllabus for the exam?,exams
+"I want to know, How do I apply for a re-examination? urgently.",exams
+Show me my class timetable,timetable
+Please help me. How much college fee is pending?,fees
+Who should I contact for help?,general
+What are the college office timings?,general
+When is the next internal test?,exams
+Where is the computer science department? for this semester.,general
+"I want to know, What is my Monday timetable? please.",timetable
+Tell me about upcoming sports events,events
+When is the next internal test? please.,exams
+"Can you tell me, What facilities are available in college? for this semester.",general
+Tell me my lab timings,timetable
+What is my attendance percentage? please.,attendance
+Please help me. Tell me the project submission date urgently.,assignments
+Show upcoming workshops,events
+Show me my payment status,fees
+I need details about my pending assignments,assignments
+"I want to know, How do I apply for a fee refund? urgently.",fees
+How do I get my student ID card?,general
+Can I volunteer for the college fest?,events
+How do I submit my assignment?,assignments
+"Can you tell me, My marks are incorrect urgently.",results
+"Can you tell me, How can I contact my faculty advisor? please.",general
+Where can I find club activities?,events
+Where can I download my marksheet? please.,results
+Please help me. Has the assignment been uploaded? please.,assignments
+Please help me. What is the last date for submission?,assignments
+How do I apply for attendance correction? please.,attendance
+Please help me. How do I check my attendance?,attendance
+Can I sit in exams with low attendance?,attendance
+What is the hostel fee?,fees
+Show upcoming workshops for this semester.,events
+How do I apply for attendance correction?,attendance
+What happens if I fail a subject? for this semester.,results
+How can I contact the administration office?,general
+When is my next lecture?,timetable
+Has the class schedule changed? please.,timetable
+"Can you tell me, I need details about my pending assignments for this semester.",assignments
+Show me the current assignments,assignments
+Tell me the project submission date,assignments
+How do I check my attendance?,attendance
+What classes do I have tomorrow?,timetable
+Tell me about upcoming sports events urgently.,events
